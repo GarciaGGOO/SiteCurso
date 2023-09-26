@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form action="processar_cadastro.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required><br><br>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso">
+            <option value="engenharia">Engenharia</option>
+            <option value="informatica">Informática</option>
+            <option value="medicina">Medicina</option>
+            <option value="direito">Direito</option>
+        </select><br><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
